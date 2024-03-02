@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body,html {
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #dadada;
+    color: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background: transparent;
+    width: 40%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:  3rem;
+}
+.container h1{
+    font-size: 3vw;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+.buttons button{
+    padding: .5vw 2vw;
+    border: none;
+    border: 1px solid  black;
+    border-radius: 10px;
+    font-size: 1.5vw;
+}
+.buttons button:focus{
+    box-shadow: #808081 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #979798 0 -3px 0 inset;
+}
+.buttons button:hover{
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #8c8c8e 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+.buttons button:active{
+    box-shadow: #9a9a9b 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+
+
+@media screen and (max-width: 739px) {
+    .container{
+        width: 100%;
+        /* background-color: red; */
+    }
+    .container h1{
+        font-size: 7vw;
+    }
+    .buttons button{
+        padding: 2.5vw 5vw;
+        font-size: 4.5vw;
+    }
+}
+
+
+
